@@ -7,7 +7,6 @@ const slug = require('slug')
 const multer = require('multer')
 const {redirect} = require('express/lib/response')
 const upload = multer({dest: 'static/uploads/'})
-const data = []
 
 app.use(express.static('static'))
 app.use(bodyParser.urlencoded({extended: false}))
@@ -18,26 +17,15 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.get('/movie', (req, res) => {
-  res.render('movie')
-})
-
 app.post('/', upload.single('title'), function (req, res) {
-  console.log(req.body.file, req.body)
-
   //var id = slug(req.body.title).toLowerCase()
-  //slug needs string?
+  //Error: slug() requires a string argument, received undefined
 
-  data.push({
-    //id: id,
-    title: req.body.title,
-    plot: req.body.plot,
-    description: req.body.description,
-  })
-
-  console.log(data)
-  //res.redirect('/' + id)
-  res.redirect('/movie')
+  var choice = req.body.imagePick
+  console.log(choice)
+  res.render('succes', {choice: choice})
+  res.redirect('/succes')
+  //Error: Cannot set headers after they are sent to the client
 })
 
 app.get('*', (req, res) => {
