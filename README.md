@@ -1,7 +1,7 @@
 ## :wave: Introductie
 Study Buddy is een matching app die studenten aan elkaar matched zodat ze samen kunnen studeren. Met deze app kun je matches krijgen voor potentiele study buddies op basis van je locatie en je preferences van studie onderwerp en studie methode. Zo kun je buddies vinden met dezelfde doelen of juist iemand waarvan je iets nieuws kan leren.
 
-In mijn wiki lees je meer over het <a href="https://github.com/rarooij98/matching-application/wiki/Ideas-&-Concept">concept</a>, 
+In mijn wiki lees je meer over het <a href="https://github.com/rarooij98/matching-application/wiki/Concept">concept</a>, 
 <a href="https://github.com/rarooij98/matching-application/wiki/Job-Stories">job stories</a> en
 <a href="https://github.com/rarooij98/matching-application/wiki/Requirements">requirements</a>.
 
