@@ -6,13 +6,7 @@ In mijn wiki lees je meer over het <a href="https://github.com/rarooij98/matchin
 <a href="https://github.com/rarooij98/matching-application/wiki/Requirements">requirements</a>.
 
 ## :star: Feature
-Voor dit concept heb ik 1 feature uitgewerkt, dit is het invoeren van de match voorkeuren tijdens het aanmaken van een profiel. De gebruiker kan namelijk kiezen om te matchen met mensen die interesse hebben in dezelfde studie onderwerpen, mensen die dezelfde studie methodes gebruiken, of mensen in een bepaalde stad. De keuzes die de gebruiker maakt beinvloeden welke matches hij/zij later kan gaan krijgen. Deze wireframes laten zien hoe het kiezen hiervan ongeveer gaat:
-
-
-<kbd><img src="images/onderwerp.png" width="250px"></kbd>
-<kbd><img src="images/methode.png" width="250px"></kbd>
-<kbd><img src="images/plaats.png" width="250px"></kbd>
-
+Voor dit concept heb ik 1 feature uitgewerkt, dit is het invoeren van de match voorkeuren tijdens het aanmaken van een profiel. De gebruiker kan namelijk kiezen om te matchen met mensen die interesse hebben in dezelfde studie onderwerpen, mensen die dezelfde studie methodes gebruiken, of mensen in een bepaalde stad. De keuzes die de gebruiker maakt beinvloeden welke matches hij/zij later kan gaan krijgen.
 
 ## :rocket: Installatie
 Dit zijn de programma's en packages die zijn gebruikt bij het maken van deze feature.
