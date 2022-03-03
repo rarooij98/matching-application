@@ -11,7 +11,7 @@ Voor dit concept heb ik 1 feature uitgewerkt, dit is het invoeren van de match v
 ![keuze formulier](https://github.com/rarooij98/matching-application/blob/main/static/images/selected.PNG)
 
 ## :rocket: Installatie
-Dit zijn de programma's en packages die zijn gebruikt bij het maken van deze feature.
+Dit zijn de programma's en packages die zijn gebruikt voor deze feature.
 
 - Node.js (v17.04.0).
 - express.
