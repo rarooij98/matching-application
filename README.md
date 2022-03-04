@@ -13,11 +13,13 @@ Voor dit concept heb ik 1 feature uitgewerkt, dit is het invoeren van de match v
 ## :rocket: Installatie
 Dit zijn de programma's en packages die zijn gebruikt voor deze feature.
 
-- Node.js (v17.04.0).
-- express.
-- nodemon.
-- multer.
+- Node.js (v17.04.0)
+- express
+- ejs
+- nodemon
+- multer
 - bodyParser, slug
+- dotenv
 
 ## :balance_scale: License
 Licensed met de <a href="https://github.com/rarooij98/matching-application/blob/main/LICENSE">MIT license</a>. 
