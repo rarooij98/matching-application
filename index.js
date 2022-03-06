@@ -20,12 +20,9 @@ app.get('/', (req, res) => {
 app.post('/', upload.single('title'), function (req, res) {
   //var id = slug(req.body.title).toLowerCase()
   //Error: slug() requires a string argument, received undefined
-
-  var choice = req.body.imagePick
+  const choice = req.body.imagePick
   console.log(choice)
   res.render('succes', {choice: choice})
-  res.redirect('/succes')
-  //Error: Cannot set headers after they are sent to the client
 })
 
 app.get('*', (req, res) => {
