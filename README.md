@@ -11,8 +11,12 @@ Voor dit concept heb ik 1 feature uitgewerkt, dit is het invoeren van de match v
 ![keuze formulier](https://github.com/rarooij98/matching-application/blob/main/static/images/selected.PNG)
 
 ## :rocket: Installatie
-Dit zijn de programma's en packages die zijn gebruikt voor deze feature.
+Om deze feature te installeren voer je de volgende stappen uit:
+1. Clone deze repo naar je lokale omgeving.
+2. Zorg dat je de juiste packages geinstalleerd heb met `npm install`. Hieronder staat een lijst van packages die deze repo gebruikt.
+3. Start de server met de start command `npm run start`.
 
+Dit zijn de programma's en packages die zijn gebruikt voor deze feature:
 - Node.js (v17.04.0)
 - express
 - ejs
@@ -20,6 +24,8 @@ Dit zijn de programma's en packages die zijn gebruikt voor deze feature.
 - multer
 - bodyParser, slug
 - dotenv
+- mongodb
+- mongoose
 
 ## :balance_scale: License
 Licensed met de <a href="https://github.com/rarooij98/matching-application/blob/main/LICENSE">MIT license</a>. 
