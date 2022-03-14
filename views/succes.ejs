@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="index.css" />
+  <%- include('./partials/head'); %>
 </head>
 <body>
-  <title>Matching app</title>
-  <h1>Succesvol</h1>
-  <p>Je hebt gekozen voor: <%=choice%></p>
+  <main>
+    <h1>Succesvol!</h1>
+    <p>
+      Leuk dat je <%= studie %> wil gaan leren met behulp van de methode <%=
+      methode %>!
+    </p>
+    <p>We hebben deze voorkeuren toegevoegd aan je profiel.</p>
+    <a href="./profiel">nice! naar mijn profiel</a>
+    <a href="./update">nee, toch iets anders kiezen</a>
+  </main>
+  <footer><%- include('./partials/footer'); %></footer>
 </body>

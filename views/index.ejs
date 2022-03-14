@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="index.css">
+  <%- include('./partials/head'); %>
 </head>
 <body>
-<title>Matching app</title>
-<h1>Wat wil je studeren?</h1>
-<form action=/ method='POST' enctype='multipart/form-data'>
-    <div>
-        <input name="imagePick" value="Geneeskunde" type="radio" id="one">
-        <label for="one">
-            <img src="images/geneeskunde.jpg" alt="geneeskunde">
-            <p>Geneeskunde</p>
-        </label>
-        
-        <input name="imagePick" value="Talen" type="radio" id="two">
-        <label for="two">
-            <img src="images/taalkunde.jpg" alt="talen">
-            <p>Talen</p>
-        </label>
-                
-        <input name="imagePick" value="Rechten" type="radio" id="three">
-        <label for="three">
-            <img src="images/rechten.jpg" alt="rechten">
-            <p>Rechten</p>
-        </label>
-    </div>
-    <label><input type='submit' value='bevestigen'></label>
-</form>
+  <main>
+    <h1>Welkom</h1>
+    <p>Gefeliciteerd met je nieuwe study buddy account.</p>
+    <p>
+      Voeg gelijk je voorkeuren aan je profiel toe zodat je betere matches kan
+      krijgen.
+    </p>
+    <a href="./studie">start</a>
+  </main>
+  <footer><%- include('./partials/footer'); %></footer>
 </body>

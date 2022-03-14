@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body>
+  <main>
+    <form method="POST" enctype="multipart/form-data">
+      <h1>Hoe wil je studeren?</h1>
+      <div>
+        <input name="methode" value="Pomodoro" type="radio" id="four" />
+        <label for="four">
+          <img src="images/pomodoro.jpg" alt="pomodoro" />
+          <p>Pomodoro</p>
+        </label>
+        <input name="methode" value="Flashcards" type="radio" id="five" />
+        <label for="five">
+          <img src="images/flash.jpg" alt="flashcards" />
+          <p>Flashcards</p>
+        </label>
+        <input name="methode" value="Mindmap" type="radio" id="six" />
+        <label for="six">
+          <img src="images/mindmap.jpg" alt="mindmap" />
+          <p>Mindmap</p>
+        </label>
+        <input name="methode" value="Feynman" type="radio" id="seven" />
+        <label for="seven">
+          <img src="images/methode1.jpg" alt="feynman" />
+          <p>Feynman</p>
+        </label>
+      </div>
+      <label>
+        <input type="submit" value="bevestigen" />
+      </label>
+    </form>
+  </main>
+  <footer><%- include('./partials/footer'); %></footer>
+</body>
