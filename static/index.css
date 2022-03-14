@@ -1,35 +1,128 @@
-h1,
-p {
-  font-family: sans-serif;
+body {
+  background: seashell;
 }
+
+h1,
+h2,
+p,
+a {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 1em 1em;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 1em 1em;
+}
+
+h2 {
+  text-align: initial;
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+}
+
+a {
+  display: block;
+  margin: 4em 20em;
+  color: seashell;
+  background-color: black;
+  padding: 1em;
+  text-decoration: none;
+}
+
+button {
+  color: seashell;
+  background-color: black;
+  margin: 1em 1em;
+  padding: 1em;
+  font-size: 2em;
+}
+
+img {
+  height: 250px;
+  width: 350px;
+  margin: 1em 2em;
+}
+
+/*  sections  */
+
+section:first-of-type {
+  display: flex;
+  margin: 6em 0em;
+}
+
+section p {
+  font-size: 2.5em;
+  text-align: initial;
+}
+
+section a {
+  display: inline-block;
+  margin: 0.5em 1.5em;
+  padding: 1.2em;
+  font-size: 1.7em;
+}
+
+/*  form  */
 
 form {
   display: flex;
   flex-direction: column;
 }
 
-div {
+form div {
   display: flex;
-  gap: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form img {
+  height: 250px;
+  width: 400px;
 }
 
 input[type='submit'] {
-  background-color: rgb(10, 69, 7);
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-img {
-  height: 150px;
-  width: auto;
+  background-color: black;
+  font-size: 2em;
+  color: seashell;
+  padding: 1em;
+  margin: 2em 40%;
 }
 
 input[type='radio'] {
   display: none;
 }
+
 input[type='radio']:checked + label {
   border: 2px solid red;
+}
+
+/*  footer  */
+
+footer {
+  position: fixed;
+  height: 8em;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 225, 203);
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+footer a {
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0em 0em;
+}
+
+footer img {
+  height: 4em;
+  width: auto;
 }
