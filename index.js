@@ -60,21 +60,21 @@ app.get('/succes', async (req, res) => {
   res.render('succes', {studie: studie.studie, methode: studie.methode})
 });
 
-// de gebruiker kan de keuzes later inzien op de profiel pagina
-app.get('/profiel', async (req, res) => {
-  const studie = await db.collection('voorkeuren').findOne()
-  res.render('profiel', {studie: studie.studie, methode: studie.methode})
-});
-
-// op de profiel pagina staat ook een link naar een formulier om de keuzes te updaten
+// om data te updaten
 app.post('/update', upload.single(), (req, res) => {
   db.collection('voorkeuren').updateOne({}, {$set: {studie: req.body.studie}})
   res.redirect('methode')
 })
 
-// data verwijderen
+// gebruiker kan de keuzes inzien op de profiel pagina
+app.get('/profiel', async (req, res) => {
+  const studie = await db.collection('voorkeuren').findOne()
+  res.render('profiel', {studie: studie.studie, methode: studie.methode})
+});
+
+// gebruiker kan data verwijderen op de profiel pagina
 app.post('/profiel', (req, res) => {
-  db.collection('voorkeuren').updateMany({}, {$unset: {studie: '', methode: ''}})
+  db.collection('voorkeuren').updateOne({}, {$unset: {studie: ''}})
 })
 
 // 404  //
