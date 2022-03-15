@@ -16,12 +16,6 @@
       <p>Studie: <%= studie %></p>
       <p>Methode: <%= methode %></p>
       <a href="./update">keuzes wijzigen</a>
-
-      <!--form om data te deleten-->
-      <form action="./profiel" methode="POST">
-        <input type="hidden" name="studie" value="" />
-        <input type="submit" value="delete" />
-      </form>
     </section>
   </main>
   <footer><%- include('./partials/footer'); %></footer>
