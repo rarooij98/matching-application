@@ -22,7 +22,7 @@ Dit zijn de programma's en packages die zijn gebruikt voor deze feature:
 - ejs
 - nodemon
 - multer
-- bodyParser, slug
+- bodyParser
 - dotenv
 - mongodb
 
