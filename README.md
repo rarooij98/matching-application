@@ -8,9 +8,7 @@ In mijn wiki lees je meer over het <a href="https://github.com/rarooij98/matchin
 ## :star: Feature
 Voor de matching app heb ik 1 feature uitgewerkt, dit is het invoeren van de match voorkeuren. De gebruiker kan namelijk kiezen om te matchen met mensen die interesse hebben in dezelfde studie onderwerpen of mensen die dezelfde studie methodes gebruiken. De keuzes die de gebruiker maakt beinvloeden welke matches hij/zij later kan gaan krijgen:
 
-<img src="https://github.com/rarooij98/matching-application/blob/main/static/images/ss0.PNG" width="200" display="inline">
-<img src="https://github.com/rarooij98/matching-application/blob/main/static/images/ss1.PNG" width="200" display="inline">
-<img src="https://github.com/rarooij98/matching-application/blob/main/static/images/ss2.PNG" width="200" display="inline">
+<img src="https://github.com/rarooij98/matching-application/blob/main/static/images/ss0.PNG" width="200"> <img src="https://github.com/rarooij98/matching-application/blob/main/static/images/ss1.PNG" width="200"> <img src="https://github.com/rarooij98/matching-application/blob/main/static/images/ss2.PNG" width="200">
 
 ## :rocket: Installatie
 Om deze feature te installeren voer je de volgende stappen uit:
