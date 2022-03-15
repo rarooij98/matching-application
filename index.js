@@ -43,7 +43,7 @@ app.get('/update', (req, res) => {
 // er wordt uit het 1e formulier een keuze gehaald en opgeslagen in de database
 // daarna wordt de gebruiker doorgestuurd naar de pagina met het 2e formulier
 app.post('/studie', upload.single(), async (req, res) => {
-  const result = await db.collection('voorkeuren').insertOne({studie: req.body.studie, methode: ''})
+  const result = await db.collection('voorkeuren').insertOne({_id: 1, studie: req.body.studie})
   console.log(result)
   res.redirect('methode')
 })
@@ -51,25 +51,25 @@ app.post('/studie', upload.single(), async (req, res) => {
 // er wordt uit het 2e formulier een keuze gehaald en toegevoegd aan het zojuist gemaakte object in de database
 // daarna wordt de gebruiker doorgestuurd naar de 'succes' pagina
 app.post('/methode', upload.single(), async (req, res) => {
-  db.collection('voorkeuren').updateOne({}, {$set: {methode: req.body.methode}})
+  db.collection('voorkeuren').updateOne({_id: 1}, {$set: {methode: req.body.methode}})
   res.redirect('succes')
 })
 
 // dan worden alle keuzes opgehaald uit de database en gepost op de succes pagina
 app.get('/succes', async (req, res) => {
-  const studie = await db.collection('voorkeuren').findOne()
+  const studie = await db.collection('voorkeuren').findOne({_id: 1})
   res.render('succes', {studie: studie.studie, methode: studie.methode})
 });
 
 // de gebruiker kan de keuzes later inzien op de profiel pagina
 app.get('/profiel', async (req, res) => {
-  const studie = await db.collection('voorkeuren').findOne()
+  const studie = await db.collection('voorkeuren').findOne({_id: 1})
   res.render('profiel', {studie: studie.studie, methode: studie.methode})
 });
 
 // op de profiel pagina staat ook een link naar een formulier om de keuzes te updaten
 app.post('/update', upload.single(), async (req, res) => {
-  db.collection('voorkeuren').updateOne({}, {$set: {studie: req.body.studie}})
+  db.collection('voorkeuren').updateOne({_id: 1}, {$set: {studie: req.body.studie}})
   res.redirect('methode')
 })
 
