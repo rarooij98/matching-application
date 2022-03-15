@@ -2,13 +2,11 @@ const express = require('express')
 const app = express()
 const req = require('express/lib/request')
 const res = require('express/lib/response')
-const bodyParser = require('body-parser')
-const slug = require('slug')
-const multer = require('multer')
 const {redirect} = require('express/lib/response')
+const bodyParser = require('body-parser')
+const multer = require('multer')
 const upload = multer({dest: 'static/uploads/'})
 const {MongoClient} = require('mongodb')
-const {ObjectId} = require('mongodb');
 const dotenv = require('dotenv').config()
 
 const port = process.env.PORT || 3000
@@ -58,23 +56,17 @@ app.post('/methode', upload.single(), (req, res) => {
 app.get('/succes', async (req, res) => {
   const studie = await db.collection('voorkeuren').findOne()
   res.render('succes', {studie: studie.studie, methode: studie.methode})
-});
-
-// om data te updaten
-app.post('/update', upload.single(), (req, res) => {
-  db.collection('voorkeuren').updateOne({}, {$set: {studie: req.body.studie}})
-  res.redirect('methode')
 })
 
-// gebruiker kan de keuzes inzien op de profiel pagina
+// gebruikers kunnen keuzes inzien en updaten op profiel pagina
 app.get('/profiel', async (req, res) => {
   const studie = await db.collection('voorkeuren').findOne()
   res.render('profiel', {studie: studie.studie, methode: studie.methode})
-});
+})
 
-// gebruiker kan data verwijderen op de profiel pagina
-app.post('/profiel', (req, res) => {
-  db.collection('voorkeuren').updateOne({}, {$unset: {studie: ''}})
+app.post('/update', upload.single(), (req, res) => {
+  db.collection('voorkeuren').updateOne({}, {$set: {studie: req.body.studie}})
+  res.redirect('methode')
 })
 
 // 404  //
@@ -82,7 +74,7 @@ app.get('*', (req, res) => {
   res.send('404 Not Found')
 })
 
-// connect to db //
+// connectie naar db //
 async function connectDB() {
   const uri = process.env.CONNECTION_STRING
   const options = {useUnifiedTopology: true, useNewUrlParser: true}
@@ -91,7 +83,7 @@ async function connectDB() {
   db = await client.db(process.env.DB_NAME)
 }
 
-// start the server //
+// start de server //
 app.listen(port, () => {
   console.log(`Listening on port 3000...`)
   connectDB()
