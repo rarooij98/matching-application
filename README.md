@@ -28,3 +28,21 @@ Dit zijn de programma's en packages die zijn gebruikt voor deze feature:
 
 ## :balance_scale: License
 Licensed met de <a href="https://github.com/rarooij98/matching-application/blob/main/LICENSE">MIT license</a>. 
+
+## 📔 Sources
+Dit zijn bronnen die ik heb gevonden tijdens mijn technische onderzoek, die mij hebben geholpen om deze feature te maken:
+
+- Driessen, V (2010, 5 januari). A successful Git branching model. Geraadpleegd van https://nvie.com/posts/a-successful-git-branching-model.
+- JSHint. (z.d.). Geraadpleegd op 28 februari 2022, van https://jshint.com.
+- Dang, W. (2020, 20 maart). Simply CSS Formatter. Geraadpleegd op 28 februari 2022, van https://marketplace.visualstudio.com/items?itemName=williamdang.vscode-simply-css-formatter&utm_source=VSCode.pro&utm_campaign=AhmadAwais.
+- Edwards, J. (z.d.). Dust-Me Selectors. Geraadpleegd op 28 februari 2022, van http://www.brothercake.com/dustmeselectors.
+- EditorConfig (z.d.). What is EditorConfig? Geraadpleegd op 28 februari 2022, van https://editorconfig.org.
+- MND contributers. Web Share API (2022, 28 januari). Geraadpleegd op 11 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API.
+- Craig, W. (z.d.). Progressive Enhancement 101. Geraadpleegd op 11 maart 2022, van https://www.webfx.com/blog/web-design/progressive-enhancement.
+- Erinç, Y.K. (2021, 1 maart). How to Deploy a Node.js App. Geraadpleegd op 7 maart 2022, van https://www.freecodecamp.org/news/deploy-nodejs-app-server-to-production.
+- Heroku Dev Center (2021, 9 december). Deploying Node.js Apps on Heroku. Geraadpleegd op 7 maart 2022, van https://devcenter.heroku.com/articles/deploying-nodejs.
+
+
+
+
+
