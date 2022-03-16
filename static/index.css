@@ -1,0 +1,147 @@
+/* css custom properties */
+:root {
+  --main-color: rgb(255, 245, 238);
+  --sec-color: rgb(255, 225, 203);
+  --dark-color: rgb(0, 0, 0);
+  --accent-color: rgb(255, 0, 0);
+  --font-fam: sans-serif;
+}
+
+body {
+  background: var(--main-color);
+}
+
+h1,
+h2,
+p,
+a {
+  font-family: var(--font-fam);
+  text-align: center;
+  margin: 1em 1em;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 1em 1em;
+}
+
+h2 {
+  text-align: initial;
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+}
+
+a {
+  display: block;
+  margin: 4em 20em;
+  color: var(--main-color);
+  background-color: var(--dark-color);
+  padding: 1em;
+  text-decoration: none;
+}
+
+button {
+  color: var(--main-color);
+  background-color: var(--dark-color);
+  margin: 1em 1em;
+  padding: 1em;
+  font-size: 2em;
+}
+
+section button {
+  font-size: 1.75em;
+  color: var(--dark-color);
+  background-color: var(--sec-color);
+}
+
+img {
+  height: 250px;
+  width: 350px;
+  margin: 1em 2em;
+}
+
+/*  sections  */
+
+section:first-of-type {
+  display: flex;
+  margin: 6em 0em;
+}
+
+section p {
+  font-size: 2.5em;
+  text-align: initial;
+}
+
+section a {
+  display: inline-block;
+  margin: 0.5em 1.5em;
+  padding: 1.2em;
+  font-size: 1.7em;
+}
+
+/*  form  */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form img {
+  height: 250px;
+  width: 400px;
+}
+
+input[type='submit'] {
+  background-color: var(--dark-color);
+  font-size: 2em;
+  color: var(--main-color);
+  padding: 1em;
+  margin: 2em 40%;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']:checked + label {
+  border: 2px solid var(--accent-color);
+}
+
+form.empty {
+  border: 6px solid var(--accent-color);
+}
+
+/*  footer  */
+
+footer {
+  position: fixed;
+  height: 8em;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--sec-color);
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+footer a {
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0em 0em;
+}
+
+footer img {
+  height: 4em;
+  width: auto;
+}
