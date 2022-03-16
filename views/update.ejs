@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body>
+  <main>
+    <form method="POST" enctype="multipart/form-data">
+      <h1>Wat wil je studeren?</h1>
+      <div>
+        <input name="studie" value="Geneeskunde" type="radio" id="one" />
+        <label for="one">
+          <img src="images/geneeskunde.jpg" alt="geneeskunde" />
+          <p>Geneeskunde</p>
+        </label>
+        <input name="studie" value="Talen" type="radio" id="two" />
+        <label for="two">
+          <img src="images/taalkunde.jpg" alt="talen" />
+          <p>Talen</p>
+        </label>
+        <input name="studie" value="Rechten" type="radio" id="three" />
+        <label for="three">
+          <img src="images/rechten.jpg" alt="rechten" />
+          <p>Rechten</p>
+        </label>
+        <input name="studie" value="Design" type="radio" id="four" />
+        <label for="four">
+          <img src="images/ux.jpg" alt="design" />
+          <p>Design</p>
+        </label>
+        <input name="studie" value="Web development" type="radio" id="five" />
+        <label for="five">
+          <img src="images/developer.jpg" alt="web development" />
+          <p>Web development</p>
+        </label>
+        <input name="studie" value="Geen voorkeur" type="radio" id="six" />
+        <label for="six">
+          <img src="images/empty.jpg" alt="geen voorkeur" />
+          <p>Geen voorkeur</p>
+        </label>
+      </div>
+      <label>
+        <input type="submit" value="bevestigen" />
+      </label>
+    </form>
+  </main>
+  <footer><%- include('./partials/footer'); %></footer>
+</body>
