@@ -1,12 +1,21 @@
+/* css custom properties */
+:root {
+  --main-color: rgb(255, 245, 238);
+  --sec-color: rgb(255, 225, 203);
+  --dark-color: rgb(0, 0, 0);
+  --accent-color: rgb(255, 0, 0);
+  --font-fam: sans-serif;
+}
+
 body {
-  background: seashell;
+  background: var(--main-color);
 }
 
 h1,
 h2,
 p,
 a {
-  font-family: sans-serif;
+  font-family: var(--font-fam);
   text-align: center;
   margin: 1em 1em;
 }
@@ -28,18 +37,24 @@ p {
 a {
   display: block;
   margin: 4em 20em;
-  color: seashell;
-  background-color: black;
+  color: var(--main-color);
+  background-color: var(--dark-color);
   padding: 1em;
   text-decoration: none;
 }
 
 button {
-  color: seashell;
-  background-color: black;
+  color: var(--main-color);
+  background-color: var(--dark-color);
   margin: 1em 1em;
   padding: 1em;
   font-size: 2em;
+}
+
+section button {
+  font-size: 1.75em;
+  color: var(--dark-color);
+  background-color: var(--sec-color);
 }
 
 img {
@@ -86,9 +101,9 @@ form img {
 }
 
 input[type='submit'] {
-  background-color: black;
+  background-color: var(--dark-color);
   font-size: 2em;
-  color: seashell;
+  color: var(--main-color);
   padding: 1em;
   margin: 2em 40%;
 }
@@ -98,7 +113,11 @@ input[type='radio'] {
 }
 
 input[type='radio']:checked + label {
-  border: 2px solid red;
+  border: 2px solid var(--accent-color);
+}
+
+form.empty {
+  border: 6px solid var(--accent-color);
 }
 
 /*  footer  */
@@ -108,7 +127,7 @@ footer {
   height: 8em;
   bottom: 0;
   width: 100%;
-  background-color: rgb(255, 225, 203);
+  background-color: var(--sec-color);
 }
 
 footer ul {
