@@ -62,7 +62,6 @@ app.get('/succes', async (req, res) => {
 app.get('/profiel', async (req, res) => {
   const studie = await db.collection('voorkeuren').findOne()
   res.render('profiel', {studie: studie.studie, methode: studie.methode})
-  res.render('profiel', {studie: studie.studie, methode: studie.methode})
 })
 
 app.post('/update', upload.single(), (req, res) => {
