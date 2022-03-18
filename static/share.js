@@ -1,5 +1,5 @@
 // web share api
-var studie = document.getElementById('studie').innerText
+const studie = document.getElementById('studie').innerText
 console.log(studie)
 
 let shareData = {
