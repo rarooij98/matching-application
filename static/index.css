@@ -5,6 +5,8 @@
   --dark-color: rgb(0, 0, 0);
   --accent-color: rgb(255, 0, 0);
   --font-fam: sans-serif;
+  --margin-s: 1em 1em;
+  --padding-s: 1em;
 }
 
 body {
@@ -17,12 +19,12 @@ p,
 a {
   font-family: var(--font-fam);
   text-align: center;
-  margin: 1em 1em;
+  margin: var(--margin-s);
 }
 
 h1 {
   font-size: 5em;
-  margin: 1em 1em;
+  margin: var(--margin-s);
 }
 
 h2 {
@@ -39,15 +41,15 @@ a {
   margin: 4em 20em;
   color: var(--main-color);
   background-color: var(--dark-color);
-  padding: 1em;
+  padding: var(--padding-s);
   text-decoration: none;
 }
 
 button {
   color: var(--main-color);
   background-color: var(--dark-color);
-  margin: 1em 1em;
-  padding: 1em;
+  margin: var(--margin-s);
+  padding: var(--padding-s);
   font-size: 2em;
 }
 
@@ -104,7 +106,7 @@ input[type='submit'] {
   background-color: var(--dark-color);
   font-size: 2em;
   color: var(--main-color);
-  padding: 1em;
+  padding: var(--padding-s);
   margin: 2em 40%;
 }
 
@@ -116,14 +118,15 @@ input[type='radio']:checked + label {
   border: 2px solid var(--accent-color);
 }
 
-form.empty {
-  border: 6px solid var(--accent-color);
+.empty {
+  border: 8px solid var(--accent-color);
 }
 
 /*  footer  */
 
 footer {
   position: fixed;
+  z-index: -1;
   height: 8em;
   bottom: 0;
   width: 100%;
@@ -138,7 +141,7 @@ footer ul {
 
 footer a {
   background-color: rgba(255, 255, 255, 0);
-  margin: 0em 0em;
+  margin: 0em;
 }
 
 footer img {
